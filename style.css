@@ -39,7 +39,7 @@ body {
   border: none;
   color: #e0dede;
   padding: 10px 40px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 100;
   margin-top: 20px;
   border-radius: 10px;
@@ -48,7 +48,7 @@ body {
 .read-more:hover {
   background-color: #3b191b;
   cursor: pointer;
-  font-size: 1.75rem;
+  font-size: 1.2rem;
 
 }
 
