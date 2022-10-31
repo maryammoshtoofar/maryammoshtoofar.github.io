@@ -1,19 +1,41 @@
 import Nav from "react-bootstrap/Nav";
-
-function NavBar() {
+import {
+  House,
+  Person,
+  FileEarmark,
+  HddStack,
+  Envelope,
+  WindowSidebar,
+} from "react-bootstrap-icons";
+const NavBar = () => {
   return (
     <Nav defaultActiveKey="/home" className="flex-column">
       <Nav.Link href="/home">
-        <i class="bx bx-home"></i>
+        <House />
         Home
       </Nav.Link>
-      <Nav.Link eventKey="link-1">About</Nav.Link>
-      <Nav.Link eventKey="link-2">Resume</Nav.Link>
-      <Nav.Link eventKey="disabled">Portfolio</Nav.Link>
-      <Nav.Link eventKey="disabled">Services</Nav.Link>
-      <Nav.Link eventKey="disabled">Contact</Nav.Link>
+      <Nav.Link eventKey="link-1">
+        <Person />
+        About
+      </Nav.Link>
+      <Nav.Link eventKey="link-2">
+        <FileEarmark />
+        Resume
+      </Nav.Link>
+      <Nav.Link eventKey="disabled">
+        <WindowSidebar />
+        Portfolio
+      </Nav.Link>
+      <Nav.Link eventKey="disabled">
+        <HddStack />
+        Services
+      </Nav.Link>
+      <Nav.Link eventKey="disabled">
+        <Envelope />
+        Contact
+      </Nav.Link>
     </Nav>
   );
-}
+};
 
 export default NavBar;
