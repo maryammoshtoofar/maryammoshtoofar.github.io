@@ -8,31 +8,32 @@ import {
   WindowSidebar,
 } from "react-bootstrap-icons";
 const NavBar = () => {
+  const iconSize = 22;
   return (
-    <Nav defaultActiveKey="/home" className="flex-column">
+    <Nav defaultActiveKey="/home" className="nav-bar">
       <Nav.Link href="/home">
-        <House />
-        Home
+        <House size={iconSize} />
+        <span>Home</span>
       </Nav.Link>
       <Nav.Link eventKey="link-1">
-        <Person />
-        About
+        <Person size={iconSize} />
+        <span>About</span>
       </Nav.Link>
       <Nav.Link eventKey="link-2">
-        <FileEarmark />
-        Resume
+        <FileEarmark size={iconSize} />
+        <span>Resume</span>
       </Nav.Link>
       <Nav.Link eventKey="disabled">
-        <WindowSidebar />
-        Portfolio
+        <WindowSidebar size={iconSize} />
+        <span>Portfolio</span>
       </Nav.Link>
       <Nav.Link eventKey="disabled">
-        <HddStack />
-        Services
+        <HddStack size={iconSize} />
+        <span>Services</span>
       </Nav.Link>
       <Nav.Link eventKey="disabled">
-        <Envelope />
-        Contact
+        <Envelope size={iconSize} />
+        <span>Contact</span>
       </Nav.Link>
     </Nav>
   );

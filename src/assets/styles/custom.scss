@@ -1,0 +1,52 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Variables
+$prime: #0563bb;
+
+// Universal Box Sizing
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+
+  #root,
+  .container-fluid,
+  .row {
+    height: 100%;
+
+    .col {
+      margin: auto;
+    }
+  }
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid black;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  background-color: $prime;
+  border-radius: 50%;
+  height: 3.25rem;
+  span {
+    display: none;
+  }
+  svg {
+    color: white;
+  }
+  &:hover {
+    border-radius: 50px;
+    background-color: red;
+  }
+}
