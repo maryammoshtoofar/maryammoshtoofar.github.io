@@ -12,28 +12,40 @@ const NavBar = () => {
   return (
     <Nav defaultActiveKey="/home" className="nav-bar">
       <Nav.Link href="/home">
-        <House size={iconSize} />
-        <span>Home</span>
+        <span className="nav-icon">
+          <House size={iconSize} />
+        </span>
+        <span className="nav-text">Home</span>
       </Nav.Link>
-      <Nav.Link eventKey="link-1">
-        <Person size={iconSize} />
-        <span>About</span>
+      <Nav.Link>
+        <span className="nav-icon">
+          <Person size={iconSize} />
+        </span>
+        <span className="nav-text">About</span>
       </Nav.Link>
-      <Nav.Link eventKey="link-2">
-        <FileEarmark size={iconSize} />
-        <span>Resume</span>
+      <Nav.Link>
+        <span className="nav-icon">
+          <FileEarmark size={iconSize} />
+        </span>
+        <span className="nav-text">Resume</span>
       </Nav.Link>
-      <Nav.Link eventKey="disabled">
-        <WindowSidebar size={iconSize} />
-        <span>Portfolio</span>
+      <Nav.Link>
+        <span className="nav-icon">
+          <WindowSidebar size={iconSize} />
+        </span>
+        <span className="nav-text">Portfolio</span>
       </Nav.Link>
-      <Nav.Link eventKey="disabled">
-        <HddStack size={iconSize} />
-        <span>Services</span>
+      <Nav.Link>
+        <span className="nav-icon">
+          <HddStack size={iconSize} />
+        </span>
+        <span className="nav-text">Services</span>
       </Nav.Link>
-      <Nav.Link eventKey="disabled">
-        <Envelope size={iconSize} />
-        <span>Contact</span>
+      <Nav.Link>
+        <span className="nav-icon">
+          <Envelope size={iconSize} />
+        </span>
+        <span className="nav-text">Contact</span>
       </Nav.Link>
     </Nav>
   );

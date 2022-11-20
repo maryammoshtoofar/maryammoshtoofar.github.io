@@ -10942,10 +10942,11 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
+  color: #45505b;
   height: 100vh;
 }
 body #root,
@@ -10977,17 +10978,24 @@ body .row .col {
 }
 
 .nav-link {
-  background-color: #0563bb;
-  border-radius: 50%;
+  color: #45505b;
+  display: flex;
+  align-items: center;
+  background-color: #f2f3f5;
+  border-radius: 60px;
+  gap: 1rem;
   height: 3.25rem;
+  overflow: hidden;
+  width: auto;
+  max-width: 3.25rem;
+  transition: max-width 0.3s;
 }
-.nav-link span {
-  display: none;
-}
-.nav-link svg {
-  color: white;
+.nav-link .nav-text {
+  padding-right: 15px;
+  white-space: nowrap;
 }
 .nav-link:hover {
-  border-radius: 50px;
-  background-color: red;
+  max-width: 7.5rem;
+  background-color: #0563bb;
+  color: #fff;
 }/*# sourceMappingURL=custom.css.map */

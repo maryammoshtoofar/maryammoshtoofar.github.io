@@ -1,7 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Variables
-$prime: #0563bb;
+$prime-color: #0563bb;
+$faded-bg: #f2f3f5;
+$text-color: #45505b;
+$white: #fff;
 
 // Universal Box Sizing
 html {
@@ -10,10 +13,11 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
+  color: $text-color;
   height: 100vh;
 
   #root,
@@ -30,23 +34,29 @@ body {
 .nav-bar {
   display: flex;
   flex-direction: column;
-  // border: 1px solid black;
   align-items: flex-start;
   gap: 1.5rem;
 }
-
 .nav-link {
-  background-color: $prime;
-  border-radius: 50%;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  background-color: $faded-bg;
+  border-radius: 60px;
+  gap: 1rem;
   height: 3.25rem;
-  span {
-    display: none;
-  }
-  svg {
-    color: white;
+  overflow: hidden;
+  width: auto;
+  max-width: 3.25rem;
+  transition: max-width 0.3s;
+
+  .nav-text {
+    padding-right: 15px;
+    white-space: nowrap;
   }
   &:hover {
-    border-radius: 50px;
-    background-color: red;
+    max-width: 7.5rem;
+    background-color: $prime-color;
+    color: $white;
   }
 }
