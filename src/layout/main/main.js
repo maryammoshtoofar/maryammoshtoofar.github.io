@@ -1,4 +1,4 @@
-import Home from "sections/home/home";
+import Hero from "sections/hero/hero";
 import About from "sections/about/about";
 import Resume from "sections/resume/resume";
 import Portfolio from "sections/portfolio/portfolio";
@@ -8,7 +8,7 @@ import Contact from "sections/contact/contact";
 const Main = () => {
   return (
     <>
-      <Home />
+      <Hero />
       <About />
       <Resume />
       <Portfolio />

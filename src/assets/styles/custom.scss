@@ -5,11 +5,8 @@ $prime-color: #0563bb;
 $faded-bg: #f2f3f5;
 $text-color: #45505b;
 $white: #fff;
+$heading-sizze: 50px;
 
-// Universal Box Sizing
-html {
-  box-sizing: border-box;
-}
 *,
 *:before,
 *:after {
@@ -24,39 +21,119 @@ body {
   .container-fluid,
   .row {
     height: 100%;
+  }
+  .col {
+    display: flex;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: baseline;
+  }
+}
 
-    .col {
-      margin: auto;
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  .house {
+    background-color: $prime-color !important;
+    color: $white !important;
+  }
+  .nav-link {
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    background-color: $faded-bg;
+    border-radius: 60px;
+    gap: 1rem;
+    height: 3.25rem;
+    overflow: hidden;
+    width: auto;
+    max-width: 3.25rem;
+    transition: max-width 0.3s;
+
+    .nav-text {
+      padding-right: 15px;
+      white-space: nowrap;
+    }
+    &:hover {
+      max-width: 7.5rem;
+      background-color: $prime-color;
+      color: $white;
     }
   }
 }
 
-.nav-bar {
+.section {
+  height: 100vh;
+  overflow: hidden;
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #0563bb;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+  }
+}
+
+.hero {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-.nav-link {
-  color: $text-color;
-  display: flex;
-  align-items: center;
-  background-color: $faded-bg;
-  border-radius: 60px;
-  gap: 1rem;
-  height: 3.25rem;
-  overflow: hidden;
-  width: auto;
-  max-width: 3.25rem;
-  transition: max-width 0.3s;
-
-  .nav-text {
-    padding-right: 15px;
-    white-space: nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 5px;
+  position: relative;
+  img {
+    background-size: contain;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
   }
-  &:hover {
-    max-width: 7.5rem;
-    background-color: $prime-color;
-    color: $white;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .icon-group {
+    display: flex;
+    gap: 10px;
+    a {
+      color: $text-color;
+      cursor: pointer;
+      &:hover {
+        color: $prime-color;
+      }
+    }
   }
 }

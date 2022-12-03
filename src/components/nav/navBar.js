@@ -7,12 +7,13 @@ import {
   Envelope,
   WindowSidebar,
 } from "react-bootstrap-icons";
+
 const NavBar = () => {
   const iconSize = 22;
   return (
-    <Nav defaultActiveKey="/home" className="nav-bar">
-      <Nav.Link href="/home">
-        <span className="nav-icon">
+    <Nav className="nav-bar">
+      <Nav.Link href="/home" className="house">
+        <span className="nav-icon ">
           <House size={iconSize} />
         </span>
         <span className="nav-text">Home</span>

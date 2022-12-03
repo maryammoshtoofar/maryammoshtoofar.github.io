@@ -10935,10 +10935,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -10959,25 +10955,24 @@ body .container-xxl,
 body .row {
   height: 100%;
 }
-body #root .col,
-body .container-fluid .col,
-body .container-sm .col,
-body .container-md .col,
-body .container-lg .col,
-body .container-xl .col,
-body .container-xxl .col,
-body .row .col {
-  margin: auto;
+body .col {
+  display: flex;
+  max-height: 100vh;
+  align-items: center;
+  justify-content: baseline;
 }
 
-.nav-bar {
+.nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
+  position: fixed;
 }
-
-.nav-link {
+.nav .house {
+  background-color: #0563bb !important;
+  color: #fff !important;
+}
+.nav .nav-link {
   color: #45505b;
   display: flex;
   align-items: center;
@@ -10990,12 +10985,84 @@ body .row .col {
   max-width: 3.25rem;
   transition: max-width 0.3s;
 }
-.nav-link .nav-text {
+.nav .nav-link .nav-text {
   padding-right: 15px;
   white-space: nowrap;
 }
-.nav-link:hover {
+.nav .nav-link:hover {
   max-width: 7.5rem;
   background-color: #0563bb;
   color: #fff;
+}
+
+.section {
+  height: 100vh;
+  overflow: hidden;
+}
+.section .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section h2, .section .h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+.section h2::before, .section .h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section h2::after, .section .h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 5px;
+  position: relative;
+}
+.hero img {
+  background-size: contain;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.hero h1, .hero .h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.hero h3, .hero .h3 {
+  font-weight: 400;
+}
+.hero .icon-group {
+  display: flex;
+  gap: 10px;
+}
+.hero .icon-group a {
+  color: #45505b;
+  cursor: pointer;
+}
+.hero .icon-group a:hover {
+  color: #0563bb;
 }/*# sourceMappingURL=custom.css.map */

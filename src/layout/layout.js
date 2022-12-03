@@ -9,8 +9,8 @@ const Layout = () => {
         <Col>
           <NavBar />
         </Col>
-        <Col xs={8}>
-          <Main />
+        <Col xs={10}>
+          <Main/>
         </Col>
       </Row>
     </Container>
