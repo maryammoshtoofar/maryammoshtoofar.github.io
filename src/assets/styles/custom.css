@@ -10935,6 +10935,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.face-button {
+  height: 50px;
+  display: inline-block;
+  border: 3px solid #0563bb;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #0563bb;
+  overflow: hidden;
+}
+.face-button .icon {
+  margin-right: 6px;
+}
+.face-button .face-primary,
+.face-button .face-secondary {
+  display: block;
+  padding: 0 32px;
+  line-height: 50px;
+  transition: margin 0.4s;
+}
+.face-button .face-primary {
+  background-color: #0563bb;
+  color: #fff;
+}
+.face-button:hover .face-primary {
+  margin-top: -50px;
+}
+
 *,
 *:before,
 *:after {
@@ -10968,10 +10998,6 @@ body .col {
   gap: 1rem;
   position: fixed;
 }
-.nav .house {
-  background-color: #0563bb !important;
-  color: #fff !important;
-}
 .nav .nav-link {
   color: #45505b;
   display: flex;
@@ -10996,7 +11022,8 @@ body .col {
 }
 
 .section {
-  height: 100vh;
+  padding: 2rem 0;
+  min-height: 100vh;
 }
 .section .section-title {
   text-align: center;

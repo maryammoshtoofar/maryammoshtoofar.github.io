@@ -1,11 +1,6 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-// Variables
-$prime-color: #0563bb;
-$faded-bg: #f2f3f5;
-$text-color: #45505b;
-$white: #fff;
-$heading-sizze: 50px;
+@import "./variables.scss";
+@import "./download-btn.scss";
 
 *,
 *:before,
@@ -35,10 +30,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   position: fixed;
-  .house {
-    background-color: $prime-color !important;
-    color: $white !important;
-  }
   .nav-link {
     color: $text-color;
     display: flex;
@@ -65,7 +56,8 @@ body {
 }
 
 .section {
-  height: 100vh;
+  padding: 2rem 0;
+  min-height: 100vh;
   .section-title {
     text-align: center;
     padding-bottom: 30px;

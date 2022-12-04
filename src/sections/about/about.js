@@ -6,7 +6,7 @@ import Skills from "./components/skills";
 const About = () => {
   return (
     <Container className="section about">
-      <div class="section-title">
+      <div className="section-title">
         <h2>About</h2>
         <p>
           Hello World! I'm Maryam Moshtoofar, a Front-End Web Developer based in
@@ -21,8 +21,8 @@ const About = () => {
           <img src={about} />
         </Col>
         <PersonalDetails />
-        <Skills />
       </Row>
+      <Skills />
     </Container>
   );
 };
