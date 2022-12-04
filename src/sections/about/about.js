@@ -1,16 +1,29 @@
+import { Container, Col, Row } from "react-bootstrap";
+import about from "../../assets/images/about.jpg";
+import PersonalDetails from "./components/personalDetails";
+import Skills from "./components/skills";
+
 const About = () => {
   return (
-    <section className="section">
+    <Container className="section about">
       <div class="section-title">
         <h2>About</h2>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
+          Hello World! I'm Maryam Moshtoofar, a Front-End Web Developer based in
+          Tehran, Iran. From creating SEO friendly content to lines of code on a
+          web page, I love combining the worlds of logic and creative design to
+          make eye-catching, accessible and user-friendly websites and web
+          applications.
         </p>
       </div>
-    </section>
+      <Row>
+        <Col>
+          <img src={about} />
+        </Col>
+        <PersonalDetails />
+        <Skills />
+      </Row>
+    </Container>
   );
 };
 

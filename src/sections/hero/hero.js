@@ -12,7 +12,7 @@ const Hero = () => {
         I'm a
         <TypeAnimation
           sequence={[
-            " Front-end Developer",
+            " Front-End Developer",
             1000,
             " React Bootcamp TA",
             2000,

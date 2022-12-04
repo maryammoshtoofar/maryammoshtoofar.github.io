@@ -10,10 +10,10 @@ const Main = () => {
     <>
       <Hero />
       <About />
-      <Resume />
+      {/* <Resume />
       <Portfolio />
       <Solutions />
-      <Contact />
+      <Contact /> */}
     </>
   );
 };

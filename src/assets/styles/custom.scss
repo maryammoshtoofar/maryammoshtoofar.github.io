@@ -66,7 +66,6 @@ body {
 
 .section {
   height: 100vh;
-  overflow: hidden;
   .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -107,7 +106,6 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 100px 5px;
   position: relative;
   img {
     background-size: contain;
@@ -135,5 +133,57 @@ body {
         color: $prime-color;
       }
     }
+  }
+}
+
+.about {
+  h4 {
+    margin-bottom: 1rem;
+    color: #728394;
+  }
+  p {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+  }
+  img {
+    width: 75%;
+    border-radius: 2px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  svg {
+    color: $prime-color;
+  }
+  dl {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+
+.skills {
+  .progress {
+    margin: 0 1rem;
+    height: 0.6rem;
+    border-radius: 0;
+    .progress-bar {
+      background-color: $prime-color;
+    }
+  }
+  .skills-title {
+    margin: 0 1rem;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
   }
 }
