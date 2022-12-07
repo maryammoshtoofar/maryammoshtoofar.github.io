@@ -210,3 +210,42 @@ body {
     font-size: 14px;
   }
 }
+
+.contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .message {
+    display: none;
+  }
+
+  .button-container {
+    margin: auto;
+  }
+
+  button {
+    background-color: $prime-color;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .icon-container {
+    background-color: $icon-bg;
+    color: $prime-color;
+    border-radius: 50%;
+    padding: 0.8rem;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: $prime-color;
+      color: $white;
+    }
+  }
+  .info {
+    display: flex;
+    gap: 1rem;
+  }
+}

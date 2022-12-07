@@ -4,7 +4,7 @@ const PersonalDetails = () => {
   const iconSize = 18;
   const PersonalInfo = {
     Birthday: "27 March 1995",
-    Phone: "+989374601954",
+    Phone: "+98 937 460 1954",
     City: "Tehran",
     Email: "maryammoshtoofar@gmail.com",
     Freelance: "Available",
