@@ -179,3 +179,34 @@ body {
     padding: 0.5rem 0;
   }
 }
+
+.solutions {
+  .row {
+    display: flex;
+    gap: 2rem;
+  }
+  .col {
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 4rem;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+  .service-icon {
+    position: relative;
+    color: $prime-color;
+  }
+
+  svg {
+    &:last-child {
+      position: absolute;
+      top: 40%;
+      right: 40%;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+  }
+}

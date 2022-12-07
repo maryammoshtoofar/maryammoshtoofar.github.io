@@ -3,7 +3,7 @@ import DownloadButton from "./components/download-button";
 const Resume = () => {
   return (
     <Container className="section resume">
-      <div class="section-title">
+      <div className="section-title">
         <h2>Resume</h2>
         <DownloadButton />
       </div>

@@ -19,7 +19,7 @@ const Skills = () => {
       <Row>
         <dl>
           {Object.entries(techStack).map((skill) => (
-            <dd>
+            <dd key={skill[0]}>
               <div className="skills-title">
                 <span>{skill[0]}</span>
                 <span>{skill[1]}%</span>

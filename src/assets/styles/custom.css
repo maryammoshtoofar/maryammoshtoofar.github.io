@@ -11136,4 +11136,30 @@ body .col {
   justify-content: space-between;
   text-transform: uppercase;
   padding: 0.5rem 0;
+}
+
+.solutions .row {
+  display: flex;
+  gap: 2rem;
+}
+.solutions .col {
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 4rem;
+}
+.solutions .col:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.solutions .service-icon {
+  position: relative;
+  color: #0563bb;
+}
+.solutions svg:last-child {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+.solutions p {
+  text-align: center;
+  font-size: 14px;
 }/*# sourceMappingURL=custom.css.map */
