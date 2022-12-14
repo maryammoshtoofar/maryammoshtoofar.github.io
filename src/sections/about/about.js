@@ -5,7 +5,7 @@ import Skills from "./components/skills";
 
 const About = () => {
   return (
-    <Container className="section about">
+    <Container className="section about" id="About">
       <div className="section-title">
         <h2>About</h2>
         <p>
@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <Row>
         <Col>
-          <img src={about} />
+          <img src={about} alt="About Me" />
         </Col>
         <PersonalDetails />
       </Row>

@@ -1,11 +1,11 @@
-import Icons from "sections/hero/components/icons/c-icons";
+import Icons from "sections/hero/components/icons/icons";
 import { Container, Image } from "react-bootstrap";
 import hero from "../../assets/images/hero.jpg";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <Container className="section hero">
+    <Container className="section hero" id="Home">
       <Image src={hero} />
       <h1>Maryam Moshtoofar</h1>
       <h3>

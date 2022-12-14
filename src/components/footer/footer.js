@@ -1,4 +1,4 @@
-import Icons from "sections/hero/components/icons/c-icons";
+import Icons from "sections/hero/components/icons/icons";
 import { Container } from "react-bootstrap";
 const Footer = () => {
   return (

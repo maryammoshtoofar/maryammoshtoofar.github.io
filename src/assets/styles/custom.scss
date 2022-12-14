@@ -1,5 +1,5 @@
+@import "variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@use "./variables.scss";
 @import "./download-btn.scss";
 
 *,
@@ -29,7 +29,9 @@ body {
   flex-direction: column;
   gap: 1rem;
   position: fixed;
+
   .nav-link {
+    cursor: pointer;
     color: $text-color;
     display: flex;
     align-items: center;
@@ -40,7 +42,7 @@ body {
     overflow: hidden;
     width: auto;
     max-width: 3.25rem;
-    transition: max-width 0.3s;
+    transition: all 0.7s;
 
     .nav-text {
       padding-right: 15px;
@@ -51,6 +53,11 @@ body {
       background-color: $prime-color;
       color: $white;
     }
+  }
+  .active {
+    background-color: $prime-color !important;
+    color: $white;
+    transition: background-image 1s ease-in-out;
   }
 }
 

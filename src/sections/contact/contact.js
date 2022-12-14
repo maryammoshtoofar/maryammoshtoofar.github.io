@@ -9,7 +9,7 @@ const Contact = () => {
   };
   const { Location, Email, Call } = contactInfo;
   return (
-    <section className="section contact">
+    <section className="section contact" id="Contact">
       <div className="section-title">
         <h2>Contact</h2>
       </div>
@@ -53,7 +53,6 @@ const Contact = () => {
           <form
             action="forms/contact.php"
             method="post"
-            role="form"
             className="php-email-form"
           >
             <Row>

@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const Skills = () => {

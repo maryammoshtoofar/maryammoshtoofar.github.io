@@ -27,7 +27,7 @@ const Solutions = () => {
   ];
 
   return (
-    <Container className="section solutions">
+    <Container className="section solutions" id="Services">
       <div className="section-title">
         <h2>Services</h2>
       </div>

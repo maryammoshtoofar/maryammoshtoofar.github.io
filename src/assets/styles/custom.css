@@ -10998,6 +10998,7 @@ body .col {
   position: fixed;
 }
 .nav .nav-link {
+  cursor: pointer;
   color: #45505b;
   display: flex;
   align-items: center;
@@ -11008,7 +11009,7 @@ body .col {
   overflow: hidden;
   width: auto;
   max-width: 3.25rem;
-  transition: max-width 0.3s;
+  transition: all 0.7s;
 }
 .nav .nav-link .nav-text {
   padding-right: 15px;
@@ -11018,6 +11019,11 @@ body .col {
   max-width: 7.5rem;
   background-color: #0563bb;
   color: #fff;
+}
+.nav .active {
+  background-color: #0563bb !important;
+  color: #fff;
+  transition: background-image 1s ease-in-out;
 }
 
 .section {
