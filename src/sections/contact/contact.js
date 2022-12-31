@@ -1,5 +1,9 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { GeoAlt, Envelope, Phone } from "react-bootstrap-icons";
+import { useState } from "react";
+import axiosInstance from "api/http";
+import { FORM_SUBMIT_URL } from "config/api";
+import Iframe from "./components/iFrame";
 const Contact = () => {
   const iconSize = 20;
   const contactInfo = {
@@ -8,6 +12,29 @@ const Contact = () => {
     Call: "+98 937 460 1954",
   };
   const { Location, Email, Call } = contactInfo;
+  const [redirectURL, setRedirectURL] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const newSubmission = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+    const data = new FormData(e.target);
+    for (let field of data.entries()) {
+      newSubmission[field[0]] = field[1];
+    }
+    axiosInstance
+      .post(FORM_SUBMIT_URL, newSubmission)
+      .then((res) => {
+        setRedirectURL("https://mailthis.to/confirm");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <section className="section contact" id="Contact">
       <div className="section-title">
@@ -51,9 +78,9 @@ const Contact = () => {
         </Col>
         <Col>
           <form
-            action="forms/contact.php"
-            method="post"
-            className="php-email-form"
+            onSubmit={(e) => {
+              handleSubmit(e);
+            }}
           >
             <Row>
               <Col>
@@ -61,7 +88,6 @@ const Contact = () => {
                   type="text"
                   name="name"
                   className="form-control"
-                  id="name"
                   placeholder="Your Name"
                   required
                 />
@@ -71,7 +97,6 @@ const Contact = () => {
                   type="email"
                   className="form-control"
                   name="email"
-                  id="email"
                   placeholder="Your Email"
                   required
                 />
@@ -81,29 +106,22 @@ const Contact = () => {
               type="text"
               className="form-control"
               name="subject"
-              id="subject"
               placeholder="Subject"
               required
             />
             <textarea
-              className="form-control"
               name="message"
+              className="form-control"
               rows="5"
               placeholder="Message"
               required
             ></textarea>
-            <div className="message">
-              <div className="loading">Loading</div>
-              <div className="error-message"></div>
-              <div className="sent-message">
-                Your message has been sent. Thank you!
-              </div>
-            </div>
             <div className="button-container">
               <Button type="submit">Send Message</Button>
             </div>
           </form>
         </Col>
+        <Iframe url={redirectURL}></Iframe>
       </Row>
     </section>
   );

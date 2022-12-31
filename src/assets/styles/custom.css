@@ -11209,6 +11209,9 @@ body .col {
   display: flex;
   gap: 1rem;
 }
+.contact .iframe {
+  display: none;
+}
 
 .footer {
   background-color: #f7f8f9;

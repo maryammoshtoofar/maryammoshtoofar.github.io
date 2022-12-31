@@ -1,0 +1,1 @@
+export const FORM_SUBMIT_URL = "https://mailthis.to/maryammoshtoofar@gmail.com";
