@@ -1,9 +1,10 @@
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { GeoAlt, Envelope, Phone } from "react-bootstrap-icons";
 import { useState } from "react";
 import axiosInstance from "api/http";
 import { FORM_SUBMIT_URL } from "config/api";
 import Iframe from "./components/iFrame";
+import SubmitButton from "./components/submitButton";
 const Contact = () => {
   const iconSize = 20;
   const contactInfo = {
@@ -13,8 +14,10 @@ const Contact = () => {
   };
   const { Location, Email, Call } = contactInfo;
   const [redirectURL, setRedirectURL] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
     const newSubmission = {
       name: "",
@@ -23,13 +26,16 @@ const Contact = () => {
       message: "",
     };
     const data = new FormData(e.target);
+    console.log(e.target);
     for (let field of data.entries()) {
       newSubmission[field[0]] = field[1];
     }
     axiosInstance
       .post(FORM_SUBMIT_URL, newSubmission)
-      .then((res) => {
+      .then(() => {
         setRedirectURL("https://mailthis.to/confirm");
+        setIsLoading(false);
+        e.target.reset();
       })
       .catch((err) => {
         console.log(err);
@@ -117,7 +123,7 @@ const Contact = () => {
               required
             ></textarea>
             <div className="button-container">
-              <Button type="submit">Send Message</Button>
+              <SubmitButton isLoading={isLoading} />
             </div>
           </form>
         </Col>
