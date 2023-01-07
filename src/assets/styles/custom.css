@@ -10990,6 +10990,29 @@ body .col {
   align-items: center;
   justify-content: baseline;
 }
+body .back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 0.1rem;
+  bottom: 0.5rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.5s;
+}
+body .back-to-top svg {
+  margin-bottom: 1rem;
+  color: #0563bb;
+  cursor: pointer;
+}
+body .back-to-top svg:hover {
+  color: #0678e3;
+}
+body .active {
+  visibility: visible;
+  opacity: 1;
+}
 
 .nav {
   display: flex;

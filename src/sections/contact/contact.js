@@ -26,7 +26,6 @@ const Contact = () => {
       message: "",
     };
     const data = new FormData(e.target);
-    console.log(e.target);
     for (let field of data.entries()) {
       newSubmission[field[0]] = field[1];
     }

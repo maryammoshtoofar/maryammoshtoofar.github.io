@@ -22,6 +22,30 @@ body {
     align-items: center;
     justify-content: baseline;
   }
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 0.1rem;
+    bottom: 0.5rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.5s;
+    svg {
+      margin-bottom: 1rem;
+      color: $prime-color;
+      cursor: pointer;
+      &:hover {
+        color: #0678e3;
+      }
+    }
+  }
+
+  .active {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .nav {
