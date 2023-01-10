@@ -5,19 +5,21 @@ const PersonalDetails = () => {
   const PersonalInfo = {
     Birthday: "27 March 1995",
     Phone: "+98 937 460 1954",
-    City: "Tehran",
     Email: "maryammoshtoofar@gmail.com",
+    Counrty: "Iran",
+    City: "Tehran",
+    English: "Proficient",
     Freelance: "Available",
-    Looking: "(preferably) A Full Time Postition",
+    Offers: " YES!",
   };
   return (
-    <Col xs={8}>
-      <h4>Personal Details</h4>
+    <Col lg={8}>
+      <h4>Front-end Develeoper (React)</h4>
       <Row>
         <Col>
           <dl>
             {Object.entries(PersonalInfo).map((item) => (
-              <dd key={item[0]}>
+              <dd className="info" key={item[0]}>
                 <ChevronRight size={iconSize} />
                 <strong>{item[0]}: </strong>
                 {item[1]}

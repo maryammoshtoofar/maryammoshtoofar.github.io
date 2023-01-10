@@ -1,11 +1,14 @@
-import { Container, Row, Col } from "react-bootstrap";
-import NavBar from "components/nav/nav-bar";
+import { Container, Col } from "react-bootstrap";
+import Header from "./header/header";
 import Main from "./main/main";
-import Footer from "components/footer/footer";
+import Footer from "layout/footer/footer";
 import { ArrowUpCircleFill } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 
+import MobileNavToggle from "components/mobile-nav-toggle/mobileNavToggle";
+
 const Layout = () => {
+  const [mobileToggle, setMobileToggle] = useState("nav-bar closed");
   const handleScroll = () => {
     if (window.scrollY > 100) setBackToTopActive(true);
     else setBackToTopActive(false);
@@ -23,24 +26,20 @@ const Layout = () => {
 
   return (
     <Container fluid>
-      <Row>
-        <Col>
-          <NavBar />
-        </Col>
-        <Col xs={11}>
-          <Main />
-        </Col>
-      </Row>
-      <Row>
-        <Footer />
-        <Col
-          className={` ${
-            backToTopActive ? "back-to-top active" : "back-to-top"
-          }`}
-        >
-          <ArrowUpCircleFill size={35} onClick={goBackTop} />
-        </Col>
-      </Row>
+      <MobileNavToggle
+        mobileToggle={mobileToggle}
+        setMobileToggle={setMobileToggle}
+      />
+      <Header mobileToggle={mobileToggle} setMobileToggle={setMobileToggle} />
+      <Main />
+      <Footer />
+      <Col
+        className={` ${
+          backToTopActive ? "back-to-top scrolled" : "back-to-top"
+        }`}
+      >
+        <ArrowUpCircleFill size={35} onClick={goBackTop} />
+      </Col>
     </Container>
   );
 };

@@ -1,8 +1,7 @@
 import Icons from "sections/hero/components/icons/icons";
-import { Container } from "react-bootstrap";
 const Footer = () => {
   return (
-    <Container className="section footer">
+    <footer className="section footer">
       <div className="section-title">
         <h2>Maryam Moshtoofar</h2>
       </div>
@@ -11,7 +10,7 @@ const Footer = () => {
         <span>©Copyright All Rights Reserved</span>
         <span>Designed by M.Moshtoofar</span>
       </div>
-    </Container>
+    </footer>
   );
 };
 

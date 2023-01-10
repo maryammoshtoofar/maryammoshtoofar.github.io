@@ -1,7 +1,7 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row , Image} from "react-bootstrap";
 import about from "../../assets/images/about.jpg";
 import PersonalDetails from "./components/personalDetails";
-import Skills from "./components/skills";
+import Skills from "../skills/skills";
 
 const About = () => {
   return (
@@ -17,12 +17,11 @@ const About = () => {
         </p>
       </div>
       <Row>
-        <Col>
-          <img src={about} alt="About Me" />
+        <Col lg={4}>
+          <Image fluid rounded src={about} alt="About Me" />
         </Col>
         <PersonalDetails />
       </Row>
-      <Skills />
     </Container>
   );
 };

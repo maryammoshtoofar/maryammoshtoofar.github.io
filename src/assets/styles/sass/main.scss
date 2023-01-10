@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "base/reset";
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "components/buttons";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/section";
+@import "layout/footer";
+
+@import "pages/hero";
+@import "pages/about";
+@import "pages/skills";
+@import "pages/resume";
+@import "pages/services";
+@import "pages/contact";

@@ -1,33 +1,33 @@
 import Icons from "sections/hero/components/icons/icons";
-import { Container, Image } from "react-bootstrap";
-import hero from "../../assets/images/hero.jpg";
+import { Container } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <Container className="section hero" id="Home">
-      <Image src={hero} />
-      <h1>Maryam Moshtoofar</h1>
-      <h3>
-        I'm a
-        <TypeAnimation
-          sequence={[
-            " Front-End Developer",
-            1000,
-            " React Bootcamp TA",
-            2000,
-            " Freelancer",
-            1000,
-          ]}
-          speed={10}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          style={{ fontSize: "1em", color: "#0563bb" }}
-        />
-      </h3>
-      <Icons />
-    </Container>
+    <div className="section hero">
+      <Container id="Home">
+        <h1>Maryam Moshtoofar</h1>
+        <p>
+          I'm a
+          <TypeAnimation
+            sequence={[
+              " Developer",
+              1000,
+              " Bootcamp TA",
+              2000,
+              " Freelancer",
+              1000,
+            ]}
+            speed={10}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: "1em", color: "#0563bb", letterSpacing: "1px" }}
+          />
+        </p>
+        <Icons />
+      </Container>
+    </div>
   );
 };
 

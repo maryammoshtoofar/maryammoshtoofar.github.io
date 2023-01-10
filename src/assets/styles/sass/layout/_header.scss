@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+
+  @include media-breakpoint-down(lg) {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active header {
+  left: 0;
+}

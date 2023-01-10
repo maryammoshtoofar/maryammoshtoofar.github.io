@@ -1,0 +1,38 @@
+.solutions {
+ padding-right: 1rem;
+  .row {
+    display: flex;
+    gap: 2rem;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3.5rem;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+  .service-icon {
+    position: relative;
+    color: $prime-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    &:last-child {
+      position: absolute;
+    }
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}

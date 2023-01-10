@@ -1,0 +1,5 @@
+@mixin solve-sticky-hover {
+  @media(hover: hover) {
+    @content
+  }
+}

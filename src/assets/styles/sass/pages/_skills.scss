@@ -1,0 +1,19 @@
+.skills {
+  .progress {
+    margin: 0 1rem;
+    height: 0.6rem;
+    border-radius: 0;
+    .progress-bar {
+      background-color: $prime-color;
+    }
+  }
+  .skills-title {
+    margin: 0 1rem;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+  }
+}

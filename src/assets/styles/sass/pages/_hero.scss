@@ -1,0 +1,71 @@
+.hero {
+  @include media-breakpoint-up(lg) {
+    padding-left: 10rem;
+  }
+  width: 100%;
+  height: 100vh;
+  background: url("assets/images/hero.jpg") top right no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  div {
+    position: absolute;
+
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b;
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  p {
+    color: #45505b;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    @include media-breakpoint-down(lg) {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  
+}
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  z-index: 100;
+  margin-top: 30px;
+  a {
+    color: $text-color;
+    cursor: pointer;
+    display: inline-block;
+    color: #45505b;
+    line-height: 1;
+    transition: 0.3s;
+    &:hover {
+      color: $prime-color;
+    }
+  }
+}

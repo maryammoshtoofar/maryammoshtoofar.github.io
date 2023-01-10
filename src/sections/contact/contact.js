@@ -46,7 +46,7 @@ const Contact = () => {
         <h2>Contact</h2>
       </div>
       <Row>
-        <Col className="infos" xs={4}>
+        <Col className="infos" lg={4}>
           <div className="info">
             <div>
               <div className="icon-container">
@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
             <div>
               <h4>Email:</h4>
-              <p>{Email}</p>
+              <p className="email">{Email}</p>
             </div>
           </div>
           <div className="info">
@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
           </div>
         </Col>
-        <Col>
+        <Col lg={8}>
           <form
             onSubmit={(e) => {
               handleSubmit(e);
@@ -93,7 +93,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   className="form-control"
-                  placeholder="Your Name"
+                  placeholder="Name"
                   required
                 />
               </Col>
@@ -102,7 +102,7 @@ const Contact = () => {
                   type="email"
                   className="form-control"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   required
                 />
               </Col>

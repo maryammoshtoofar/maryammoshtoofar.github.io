@@ -1,0 +1,39 @@
+.about , .skills {
+  h4 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #728394;
+    padding-top: 1.5rem;
+  }
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  svg {
+    color: $prime-color;
+    font-size: 16px;
+    margin-right: 5px;
+    line-height: 0;
+  }
+
+  dl {
+    .info {
+      display: flex;
+      gap: 0.2rem;
+      align-items: center;
+    }
+    @include media-breakpoint-up(lg) {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+}

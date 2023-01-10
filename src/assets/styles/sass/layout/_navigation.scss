@@ -1,0 +1,58 @@
+.nav {
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 100%;
+  .nav-link {
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    color: #45505b;
+    cursor: pointer;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    border-radius: 3rem;
+    background: #f2f3f5;
+    height: 3.3rem;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    @include media-breakpoint-up(lg) {
+      width: 3.3rem;
+    }
+
+    &:hover , &:focus {
+      background-color: $prime-color;
+      color: $white;
+      width: 100%;
+    }
+  }
+  .active {
+    opacity: 1;
+    background-color: $prime-color;
+    color: $white;
+    transition: background-image 1s ease-in-out;
+  }
+}
+.open {
+  left: 1rem;
+  background-color: $white;
+  border-right: 1px solid $faded-bg;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  .nav-link {
+    height: unset;
+    max-width: unset;
+    overflow: unset;
+    &:hover {
+      max-width: unset;
+    }
+  }
+}
