@@ -6,6 +6,7 @@ const DownloadButton = () => {
       className="download-button"
       href="https://usaupload.com/6Pfx/maryam_moshtoofar.pdf"
       target="_blank"
+      rel="noreferrer"
     >
       <div className="download-primary">
         <CloudDownload size={iconSize} className="icon fa fa-cloud" />

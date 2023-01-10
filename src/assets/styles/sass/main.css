@@ -11109,35 +11109,46 @@ body {
   color: #0563bb;
 }
 
-.about h4, .about .h4, .skills h4, .skills .h4 {
+.about h4, .about .h4,
+.skills h4,
+.skills .h4 {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
   padding-top: 1.5rem;
 }
-.about p, .skills p {
+.about p,
+.skills p {
   margin: 0;
   padding: 5px;
 }
-.about .col, .skills .col {
+.about .col,
+.skills .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
 }
-.about svg, .skills svg {
+.about .col-lg-8,
+.skills .col-lg-8 {
+  padding-left: 2rem;
+}
+.about svg,
+.skills svg {
   color: #0563bb;
   font-size: 16px;
   margin-right: 5px;
   line-height: 0;
 }
-.about dl .info, .skills dl .info {
+.about dl .info,
+.skills dl .info {
   display: flex;
   gap: 0.2rem;
   align-items: center;
 }
 @media (min-width: 992px) {
-  .about dl, .skills dl {
+  .about dl,
+.skills dl {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;

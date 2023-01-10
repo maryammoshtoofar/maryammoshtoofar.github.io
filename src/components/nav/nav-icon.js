@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 const NavIcon = ({ setMobileToggle, type, activeLink, setActiveLink }) => {
   const { name, component } = type;
   const handleScrollToSection = () => {

@@ -19,7 +19,7 @@ const PersonalDetails = () => {
         <Col>
           <dl>
             {Object.entries(PersonalInfo).map((item) => (
-              <dd className="info" key={item[0]}>
+              <dd className={`info ${item[0]}`} key={item[0]}>
                 <ChevronRight size={iconSize} />
                 <strong>{item[0]}: </strong>
                 {item[1]}
