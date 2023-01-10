@@ -1,7 +1,7 @@
 import { Container, Col, Row , Image} from "react-bootstrap";
 import about from "../../assets/images/about.jpg";
 import PersonalDetails from "./components/personalDetails";
-import Skills from "../skills/skills";
+
 
 const About = () => {
   return (
