@@ -5,7 +5,30 @@ import axiosInstance from "api/http";
 import { FORM_SUBMIT_URL } from "config/api";
 import Iframe from "./components/iFrame";
 import SubmitButton from "./components/submitButton";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const showToast = (success) => {
+    let message = "Form Submission Error!";
+    const toastOptions = {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    };
+
+    if (success) {
+      message = "Form Submission Successful";
+      toast.success(message, toastOptions);
+      return;
+    }
+
+    toast.error(message, toastOptions);
+  };
   const iconSize = 20;
   const contactInfo = {
     Location: "South Karoon , Tehran ,Iran",
@@ -35,9 +58,12 @@ const Contact = () => {
         setRedirectURL("https://mailthis.to/confirm");
         setIsLoading(false);
         e.target.reset();
+        showToast(true);
       })
       .catch((err) => {
         console.log(err);
+        showToast(false);
+        setIsLoading(false);
       });
   };
   return (
@@ -125,6 +151,7 @@ const Contact = () => {
               <SubmitButton isLoading={isLoading} />
             </div>
           </form>
+          <ToastContainer closeButton={false} />
         </Col>
         <Iframe url={redirectURL}></Iframe>
       </Row>

@@ -1,20 +1,16 @@
+import Animated from "components/animate-component";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import about from "../../assets/images/about.jpg";
 import PersonalDetails from "./components/personalDetails";
-import { useSpring, animated } from "@react-spring/web";
 
 const About = () => {
-  const springs = useSpring({
-    from: {
-      opacity: "0",
-      transform: "translateY(50px)",
-    },
-    to: { opacity: "1", transform: "translateY(0)" },
-    config: { duration: "1000" },
-  });
+  const animateConfig = {
+    initial: { transform: "translateY(50px)", opacity: 0 },
+    whileInView: { transform: "translateY(0)", opacity: 1 },
+  };
   return (
     <Container className="section about" id="About">
-      <animated.div style={{ ...springs }}>
+      <Animated animateConfig={animateConfig}>
         <div className="section-title">
           <h2>About</h2>
           <p>
@@ -31,7 +27,7 @@ const About = () => {
           </Col>
           <PersonalDetails />
         </Row>
-      </animated.div>
+      </Animated>
     </Container>
   );
 };

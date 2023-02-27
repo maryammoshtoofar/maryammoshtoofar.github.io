@@ -1,20 +1,17 @@
 import Icons from "sections/hero/components/icons/icons";
 import { Container } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
-import { useSpring, animated } from "@react-spring/web";
+import Animated from "components/animate-component";
 
 const Hero = () => {
-  const springs = useSpring({
-    from: {
-      transform: "scale(0)",
-    },
-    to: { transform: "scale(1)" },
-    config: { duration: "1000" },
-  });
+  const animateConfig = {
+    initial: { transform: "translateZ(-100px) translateX(100px)", opacity: 0 },
+    whileInView: { transform: "translateZ(0) translateX(0)", opacity: 1 },
+  };
   return (
-    <animated.div style={{ ...springs }}>
-      <div className="section hero">
-        <Container id="Home">
+    <div className="section hero">
+      <Container id="Home">
+        <Animated animateConfig={animateConfig}>
           <h1>Maryam Moshtoofar</h1>
           <p>
             I'm a
@@ -39,9 +36,9 @@ const Hero = () => {
             />
           </p>
           <Icons />
-        </Container>
-      </div>
-    </animated.div>
+        </Animated>
+      </Container>
+    </div>
   );
 };
 

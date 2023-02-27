@@ -8,6 +8,14 @@ import {
   WindowSidebar,
 } from "react-bootstrap-icons";
 
+export const HeroTitles = [
+  " Developer",
+  1000,
+  " Bootcamp TA",
+  2000,
+  " Freelancer",
+  1000,
+];
 const heroSize = 18;
 export const heroIcons = [
   {
@@ -17,17 +25,17 @@ export const heroIcons = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/maryammoshtoofar",
+    href: "https://www.instagram.com/maryammoshtoofar/",
     component: <Instagram size={heroSize} />,
   },
   {
     name: "Telegram",
-    href: "https://telegram.com/maryammoshtoofar",
+    href: "https://t.me/maryammoshtoofar",
     component: <Telegram size={heroSize} />,
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.com/maryammoshtoofar",
+    href: "https://www.linkedin.com/in/maryammoshtoofar/",
     component: <Linkedin size={heroSize} />,
   },
 ];

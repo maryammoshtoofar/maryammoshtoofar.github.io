@@ -5,9 +5,6 @@ import { useState , useEffect } from "react";
 const NavBar = ({ setMobileToggle }) => {
   const [activeLink, setActiveLink] = useState("");
 
-  useEffect(() => {
-    console.log(activeLink);
-  }, [activeLink]);
 
   return (
     <Nav>

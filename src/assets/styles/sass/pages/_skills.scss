@@ -1,12 +1,17 @@
 .skills {
-  .progress {
-    margin: 0 1rem;
-    height: 0.6rem;
-    border-radius: 0;
-    .progress-bar {
-      background-color: $prime-color;
+  .progress-bar {
+    min-width: 100%;
+    background-color: $faded-bg;
+  }
+
+  .now {
+    background-color: $prime-color;
+    max-height: 10px;
+    &:before {
+      content: "\200B";
     }
   }
+
   .skills-title {
     margin: 0 1rem;
     display: flex;
