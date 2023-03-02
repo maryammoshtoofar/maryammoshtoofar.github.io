@@ -1,10 +1,12 @@
 import { TextRight, XCircleFill } from "react-bootstrap-icons";
+import { useEffect } from "react";
 
 const MobileNavToggle = ({ mobileToggle, setMobileToggle }) => {
-  const toggleNavBar = () => {
+  
+  const toggleNavBar = (e) => {
+    e.stopPropagation();
     if (mobileToggle === "nav-bar closed") setMobileToggle("nav-bar open");
     else setMobileToggle("nav-bar closed");
-
     document.body.classList.toggle("mobile-nav-active");
   };
 

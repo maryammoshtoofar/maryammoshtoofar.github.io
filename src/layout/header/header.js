@@ -2,7 +2,7 @@ import NavBar from "components/nav/nav-bar";
 
 const Header = ({ setMobileToggle }) => {
   return (
-    <header>
+    <header className="header">
       <NavBar setMobileToggle={setMobileToggle} />
     </header>
   );

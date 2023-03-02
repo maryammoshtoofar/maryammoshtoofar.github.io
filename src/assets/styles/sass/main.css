@@ -10897,6 +10897,7 @@ header {
   flex-direction: column;
   gap: 0.1rem;
   width: 100%;
+  z-index: 2;
 }
 .nav .nav-link {
   display: flex;

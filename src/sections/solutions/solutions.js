@@ -36,8 +36,8 @@ const Solutions = () => {
       </div>
       <Row>
         {services.map((service) => (
-          <Col>
-            <ServiceCard key={service.name} service={service} />
+          <Col key={service.name}>
+            <ServiceCard  service={service} />
           </Col>
         ))}
       </Row>
