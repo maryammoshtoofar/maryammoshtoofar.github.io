@@ -6,8 +6,8 @@ const PersonalDetails = () => {
     Birthday: "27 March 1995",
     Phone: "+98 937 460 1954",
     Email: "maryammoshtoofar@gmail.com",
-    Counrty: "Iran",
-    City: "Tehran",
+    Counrty: "Canada",
+    City: "Toronto",
     English: "Proficient",
     Freelance: "Available",
     Offers: " YES!",
@@ -19,7 +19,7 @@ const PersonalDetails = () => {
         <Col>
           <dl>
             {Object.entries(PersonalInfo).map((item) => (
-              <dd className="info" key={item[0]}>
+              <dd className={`info ${item[0]}`} key={item[0]}>
                 <ChevronRight size={iconSize} />
                 <strong>{item[0]}: </strong>
                 {item[1]}

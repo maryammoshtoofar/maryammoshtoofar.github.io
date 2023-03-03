@@ -1,31 +1,34 @@
+import Animated from "components/animate-component";
 import { Container, Row } from "react-bootstrap";
-import ProgressBar from "react-bootstrap/ProgressBar";
+
+import Skill from "./components/skill";
 
 const Skills = () => {
-  const techStack = {
-    HTML: 100,
-    CSS: 90,
-    JavaScript: 90,
-    React: 80,
-    RWD: 90,
-    Typescript: 70,
+  const techStack = [
+    { name: "HTML", percent: 100 },
+    { name: "CSS", percent: 90 },
+    { name: "JavaScript", percent: 90 },
+    { name: "React", percent: 80 },
+    { name: "RWD", percent: 90 },
+    { name: "Typescript", percent: 70 },
+  ];
+
+  const animateConfig = {
+    initial: { transform: "translateY(50px)", opacity: 0 },
+    whileInView: { transform: "translateY(0)", opacity: 1 },
   };
 
   return (
-    <Container className="skills">
-      <div className="section-title">
-        <h2>Skills</h2>
-      </div>
+    <Container className="section skills">
+      <Animated animateConfig={animateConfig}>
+        <div className="section-title">
+          <h2>Skills</h2>
+        </div>
+      </Animated>
       <Row>
         <dl>
-          {Object.entries(techStack).map((skill) => (
-            <dd key={skill[0]}>
-              <div className="skills-title">
-                <span>{skill[0]}</span>
-                <span>{skill[1]}%</span>
-              </div>
-              <ProgressBar now={skill[1]} />
-            </dd>
+          {techStack.map((skill) => (
+            <Skill key={skill.name} skill={skill} />
           ))}
         </dl>
       </Row>

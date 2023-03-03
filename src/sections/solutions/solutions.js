@@ -1,9 +1,10 @@
 import { Container, Col, Row } from "react-bootstrap";
-import ServicesIcon from "./services-icon";
+import ServiceCard from "./components/service-card";
 
 const Solutions = () => {
   const services = [
     {
+      id: 1,
       name: "Development",
       icon: "CodeSlash",
       color: "#007aff",
@@ -11,6 +12,7 @@ const Solutions = () => {
         "Having agreed on the look and feel of a web app with the team , I can help bring it to life with front-end coding.",
     },
     {
+      id: 2,
       name: "Maintenance",
       icon: "Tools",
       color: "#e80368",
@@ -18,6 +20,7 @@ const Solutions = () => {
         "I can assist with advancing your web-based software to keep it efficient and compliant with all your evolving business needs.",
     },
     {
+      id: 3,
       name: "Optimization",
       icon: "BarChartFill",
       color: "#ffc107",
@@ -32,23 +35,11 @@ const Solutions = () => {
         <h2>Services</h2>
       </div>
       <Row>
-        {services.map((service) => {
-          const { name, icon, color, description } = service;
-          return (
-            <Col key={name}>
-              <ServicesIcon
-                className="icon"
-                iconName={icon}
-                size={25}
-                color={color}
-              />
-              <h4>
-                <span>{name}</span>
-              </h4>
-              <p>{description}</p>
-            </Col>
-          );
-        })}
+        {services.map((service) => (
+          <Col key={service.name}>
+            <ServiceCard  service={service} />
+          </Col>
+        ))}
       </Row>
     </Container>
   );
