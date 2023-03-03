@@ -1,5 +1,4 @@
 import { TextRight, XCircleFill } from "react-bootstrap-icons";
-import { useEffect } from "react";
 
 const MobileNavToggle = ({ mobileToggle, setMobileToggle }) => {
   

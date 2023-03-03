@@ -4,7 +4,7 @@ const DownloadButton = () => {
   return (
     <a
       className="download-button"
-      href="https://usaupload.com/6Pfx/maryam_moshtoofar.pdf"
+      href="https://drive.google.com/file/d/1iuP5ibo41CTFvhC_xAl2cF-lI4EuhAeP/view?usp=sharing"
       target="_blank"
       rel="noreferrer"
     >

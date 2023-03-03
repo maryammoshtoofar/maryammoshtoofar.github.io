@@ -2,7 +2,7 @@ import { Container, Col } from "react-bootstrap";
 import Header from "./header/header";
 import Main from "./main/main";
 import Footer from "layout/footer/footer";
-import { ArrowUpCircleFill, WindowSidebar } from "react-bootstrap-icons";
+import { ArrowUpCircleFill } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import MobileNavToggle from "components/mobile-nav-toggle/mobileNavToggle";
 

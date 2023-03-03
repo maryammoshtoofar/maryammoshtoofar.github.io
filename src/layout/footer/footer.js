@@ -7,8 +7,9 @@ const Footer = () => {
       </div>
       <Icons />
       <div className="credits">
-        <span>©Copyright All Rights Reserved</span>
-        <span>Designed by M.Moshtoofar</span>
+        <span>©Copyright BootstrapMade</span>
+        <span>Developed by M.Moshtoofar</span>
+        <span>Tech Stack Used: React , Bootstrap , SASS</span>
       </div>
     </footer>
   );
