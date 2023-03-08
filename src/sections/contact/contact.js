@@ -31,7 +31,7 @@ const Contact = () => {
   };
   const iconSize = 20;
   const contactInfo = {
-    Location: "South Karoon , Tehran ,Iran",
+    Location: "Tehran ,Iran",
     Email: "maryammoshtoofar@gmail.com",
     Call: "+98 937 460 1954",
   };
@@ -79,10 +79,10 @@ const Contact = () => {
                 <Envelope size={iconSize} />
               </div>
             </div>
-            <div>
+            {/* <div>
               <h4>Location:</h4>
               <p>{Location}</p>
-            </div>
+            </div> */}
           </div>
           <div className="info">
             <div>

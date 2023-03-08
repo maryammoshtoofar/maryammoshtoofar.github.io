@@ -16,7 +16,7 @@ const About = () => {
           <h2>About</h2>
           <p>
             Hello World! I'm Maryam Moshtoofar, a Front-End Web Developer based
-            in Toronto, Canada. From creating SEO friendly content to lines of code
+            in Tehran, Iran. From creating SEO friendly content to lines of code
             on a web page, I love combining the worlds of logic and creative
             design to make eye-catching, accessible and user-friendly websites
             and web applications.
