@@ -79,10 +79,10 @@ const Contact = () => {
                 <Envelope size={iconSize} />
               </div>
             </div>
-            {/* <div>
+            <div>
               <h4>Location:</h4>
               <p>{Location}</p>
-            </div> */}
+            </div>
           </div>
           <div className="info">
             <div>

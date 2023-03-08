@@ -15,7 +15,7 @@ const DownloadButton = () => {
 
       <div className="download-secondary">
         <HddFill size={iconSize} className="icon fa fa-hdd-o" />
-        Size: 512 KB
+        Size: 0.5 MB
       </div>
     </a>
   );

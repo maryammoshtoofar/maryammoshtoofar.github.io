@@ -1,22 +1,18 @@
 import { Link } from "react-scroll";
-const NavIcon = ({
-  setMobileToggle,
-  type,
-  setActiveLink,
-}) => {
+
+const NavIcon = ({ setMobileToggle, type }) => {
   const { name, component } = type;
-  const handleScrollToSection = (e) => {
-    setActiveLink(e.currentTarget.children[1].innerHTML);
+  const handleScroll = (e) => {
+    console.log(e.currentTarget)
     if (document.body.classList.contains("mobile-nav-active")) {
       document.body.classList.remove("mobile-nav-active");
       setMobileToggle("nav-bar closed");
     }
   };
 
-
   return (
     <Link
-      onClick={handleScrollToSection}
+      onClick={handleScroll}
       activeClass="active"
       to={name}
       spy={true}

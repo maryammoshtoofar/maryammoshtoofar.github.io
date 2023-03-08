@@ -2,8 +2,10 @@ import Nav from "react-bootstrap/Nav";
 import NavIcon from "./nav-icon";
 import { navIcons } from "config/constants";
 import { useState } from "react";
+import { useEffect } from "react";
 const NavBar = ({ setMobileToggle }) => {
   const [activeLink, setActiveLink] = useState("");
+
 
   return (
     <Nav>
@@ -12,8 +14,6 @@ const NavBar = ({ setMobileToggle }) => {
           setMobileToggle={setMobileToggle}
           type={item}
           key={item.name}
-          activeLink={activeLink}
-          setActiveLink={setActiveLink}
         />
       ))}
     </Nav>
