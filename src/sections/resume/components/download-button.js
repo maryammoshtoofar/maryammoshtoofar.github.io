@@ -4,7 +4,7 @@ const DownloadButton = () => {
   return (
     <a
       className="download-button"
-      href="https://drive.google.com/file/d/15eCHlnnbWv_H7Pr_8T2LdKCHjr__XL8U/view?usp=sharing"
+      href="https://drive.google.com/file/d/1xDX1ydJl1BTHBBNdwIcLcrYAHDKQMxxr/view?usp=sharing"
       target="_blank"
       rel="noreferrer"
     >
@@ -15,7 +15,7 @@ const DownloadButton = () => {
 
       <div className="download-secondary">
         <HddFill size={iconSize} className="icon fa fa-hdd-o" />
-        Size: 0.5 MB
+        Size: 0.2 MB
       </div>
     </a>
   );
