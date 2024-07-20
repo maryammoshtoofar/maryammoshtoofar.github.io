@@ -45,7 +45,7 @@ export const navIcons = [
   { name: "Home", component: <House size={navSize} /> },
   { name: "About", component: <Person size={navSize} /> },
   { name: "Resume", component: <FileEarmark size={navSize} /> },
-  // { name: "Portfolio", component: <WindowSidebar size={navSize} /> },
+  { name: "Portfolio", component: <WindowSidebar size={navSize} /> },
   { name: "Services", component: <HddStack size={navSize} /> },
   { name: "Contact", component: <Envelope size={navSize} /> },
 ];

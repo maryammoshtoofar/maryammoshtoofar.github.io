@@ -4,7 +4,7 @@ import Skills from "sections/skills/skills";
 import Resume from "sections/resume/resume";
 import Solutions from "sections/solutions/solutions";
 import Contact from "sections/contact/contact";
-// import Portfolio from "sections/portfolio/portfolio";
+import Portfolio from "sections/portfolio/portfolio";
 
 const Main = () => {
   return (
@@ -14,7 +14,7 @@ const Main = () => {
         <About />
         <Skills />
         <Resume />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <Solutions />
         <Contact />
       </main>

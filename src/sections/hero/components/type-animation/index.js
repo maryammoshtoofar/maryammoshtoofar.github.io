@@ -6,9 +6,9 @@ const TypeAnimate = () => {
       I'm a
       <TypeAnimation
         sequence={[
-          " Developer",
+          " Full-Stack Developer",
           1000,
-          " Bootcamp TA",
+          " Bootcamp Mentor",
           2000,
           " Freelancer",
           1000,

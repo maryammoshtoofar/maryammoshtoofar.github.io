@@ -1,0 +1,83 @@
+// Portfolio Card
+.portfolio-card {
+  margin: auto;
+  border: 1px solid $accentColor;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &:hover img {
+    opacity: 20%;
+  }
+  &:hover .title {
+    translate: none;
+  }
+
+  &:hover button {
+    translate: none;
+  }
+  &:hover .sub-title {
+    opacity: 100%;
+  }
+
+  &:hover .link {
+    opacity: 100%;
+  }
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    translate: 0px -500px;
+    transition: all 0.8s ease-in-out;
+    text-align: center;
+  }
+  .sub-title {
+    color: $accentColor;
+    font-family: "Roboto", sans-serif;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    top: 0;
+  }
+  a {
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .link {
+    align-self: center;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background-color: $accentColor;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    width: 100%;
+    align-self: stretch;
+    translate: 0px 500px;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
