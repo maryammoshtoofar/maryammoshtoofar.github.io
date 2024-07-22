@@ -23,7 +23,7 @@ const Solutions = () => {
       id: 3,
       name: "Optimization",
       icon: "BarChartFill",
-      color: "#ffc107",
+      color: "#fff706",
       description:
         "I can help provide high availability and trouble-free functionality of your web app and resolve issues in usage and technology",
     },

@@ -16,13 +16,11 @@ const Portfolio = () => {
           <h2>Portfolio</h2>
           <p>Some of these projects require a VPN</p>
         </div>
-        <Row>
+        <div className="portfolios">
           {projects.map((project) => (
-            <Col>
               <Card key={project.id} project={project} />
-            </Col>
           ))}
-        </Row>
+        </div>
       </Animated>
     </Container>
   );

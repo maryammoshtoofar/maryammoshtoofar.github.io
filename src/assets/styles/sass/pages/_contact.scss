@@ -4,6 +4,17 @@
     flex-direction: column;
     width: 90%;
     gap: 1rem;
+    margin: auto;
+
+    input,
+    textarea {
+      background-color: #181824;
+
+      &:focus,
+      &:read-write {
+        background-color: #181824;
+      }
+    }
   }
 
   .message {
@@ -21,14 +32,26 @@
   }
 
   .icon-container {
-    background-color: $icon-bg;
-    color: $prime-color;
+    background-color: #181824;
+    color: white;
     border-radius: 50%;
     padding: 0.8rem;
     transition: all 0.5s ease-in-out;
     &:hover {
       background-color: $prime-color;
       color: $white;
+    }
+  }
+  .infos {
+    font-size: 14px;
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 12px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 25px;
+      flex-direction: column;
     }
   }
   .info {

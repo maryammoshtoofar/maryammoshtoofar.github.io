@@ -5,12 +5,22 @@ import Skill from "./components/skill";
 
 const Skills = () => {
   const techStack = [
-    { name: "HTML", percent: 100 },
-    { name: "CSS", percent: 90 },
     { name: "JavaScript", percent: 90 },
-    { name: "React", percent: 80 },
-    { name: "RWD", percent: 90 },
-    { name: "Typescript", percent: 70 },
+    { name: "HTML:", percent: 95 },
+    { name: "CSS", percent: 90 },
+    { name: "TypeScript", percent: 65 },
+    { name: "Nextjs", percent: 75 },
+    { name: "Nodejs", percent: 70 },
+    { name: "web3.js / ethers.js", percent: 65 },
+    { name: "Responsive Web Design", percent: 90 },
+    { name: "React Context / Redux", percent: 90 },
+    { name: "Git", percent: 95 },
+    { name: "MongoDB", percent: 55 },
+    { name: "RESTful APIs", percent: 85 },
+    { name: "SASS", percent: 75 },
+    { name: "UI Frameworks (Tailwind , Bootstrap..)", percent: 95 },
+    { name: "SSR", percent: 55 },
+    { name: "Figma / Adobe XD", percent: 80 },
   ];
 
   const animateConfig = {
@@ -31,6 +41,7 @@ const Skills = () => {
             <Skill key={skill.name} skill={skill} />
           ))}
         </dl>
+        <p style={{ textAlign: "center" }}>and so much more... </p>
       </Row>
     </Container>
   );

@@ -15,7 +15,7 @@ const Skill = ({ skill }) => {
       </div>
       <div className="progress-bar">
         <Animated animateConfig={animateConfig}>
-          <div className="now" style={{ maxWidth: `${percent}%` }}></div>
+          <div className="now" style={{ Width: `${percent}%` }}></div>
         </Animated>
       </div>
     </dd>

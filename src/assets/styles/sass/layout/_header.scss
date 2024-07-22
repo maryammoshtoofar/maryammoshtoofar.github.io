@@ -12,8 +12,8 @@ header {
 
   @include media-breakpoint-down(lg) {
     width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
+    background: #374764;
+    border-right: 1px solid #161f31;
     left: -300px;
   }
 }

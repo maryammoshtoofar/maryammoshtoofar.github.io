@@ -8,7 +8,7 @@ const TypeAnimate = () => {
         sequence={[
           " Full-Stack Developer",
           1000,
-          " Bootcamp Mentor",
+          " Coding Bootcamp Mentor",
           2000,
           " Freelancer",
           1000,
@@ -19,7 +19,6 @@ const TypeAnimate = () => {
         repeat={Infinity}
         style={{
           fontSize: "1em",
-          color: "#0563bb",
           letterSpacing: "1px",
         }}
       />

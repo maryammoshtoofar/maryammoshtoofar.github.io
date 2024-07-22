@@ -38,7 +38,7 @@ const Layout = () => {
   }, []);
 
   return (
-    <Container fluid>
+    <Container fluid className="main-box">
       <MobileNavToggle
         mobileToggle={mobileToggle}
         setMobileToggle={setMobileToggle}

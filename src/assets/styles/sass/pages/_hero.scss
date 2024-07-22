@@ -14,7 +14,7 @@
 
   &:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(34, 34, 34, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -24,7 +24,6 @@
 
   div {
     position: absolute;
-
   }
 
   h1 {
@@ -32,7 +31,7 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: #45505b;
+    color: $light-text;
     @include media-breakpoint-down(lg) {
       font-size: 32px;
       line-height: 36px;
@@ -40,7 +39,7 @@
   }
 
   p {
-    color: #45505b;
+    color: $light-text;
     margin: 15px 0 0 0;
     font-size: 26px;
     font-family: "Poppins", sans-serif;
@@ -50,7 +49,6 @@
       line-height: 24px;
     }
   }
-  
 }
 .social-links {
   display: flex;
@@ -61,7 +59,7 @@
     color: $text-color;
     cursor: pointer;
     display: inline-block;
-    color: #45505b;
+    color: $light-text;
     line-height: 1;
     transition: 0.3s;
     &:hover {

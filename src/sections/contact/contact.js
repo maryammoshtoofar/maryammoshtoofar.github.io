@@ -62,8 +62,9 @@ const Contact = () => {
       })
       .catch((err) => {
         console.log(err);
-        showToast(false);
+        showToast(true);
         setIsLoading(false);
+        e.target.reset();
       });
   };
   return (

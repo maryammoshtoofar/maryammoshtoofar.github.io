@@ -9,6 +9,14 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Web3 Project",
+    image: "web3-project-demo.jpg",
+    techStack: "Laravel / javaScript / Ethers",
+    github: "https://github.com/maryammoshtoofar/Meta-E-Bankroll-Demo",
+    url: "https://maryammoshtoofar.github.io/Meta-E-Bankroll-Demo",
+  },
+  {
+    id: 3,
     title: "dApp RESTful api",
     image: "dapp-rest-api.jpeg",
     techStack: "Node / Express / Ethers / Web3",
@@ -16,10 +24,28 @@ export const projects = [
     url: "https://github.com/maryammoshtoofar/dapp-REST-api",
   },
   {
-    id: 3,
-    title: "coffee ecommerce",
-    image: "coffee-ecommerce.png",
-    techStack: "Next / Typescript",
-    url: "https://ecommerce-next-typescript-seven.vercel.app",
+    id: 4,
+    title: "Rock Paper Scissors Game",
+    image: "rock-paper-scissors-game.png",
+    techStack: "React / Typescript / Tailwind",
+    github: "https://github.com/maryammoshtoofar/rock-paper-scissors-game",
+    url: "https://maryammoshtoofar.github.io/rock-paper-scissors-game",
+  },
+  {
+    id: 5,
+    title: "Pure JS mobile notes app",
+    image: "pure-js-notes-app.png",
+    techStack: "JavaScript / HTML / CSS",
+    github: "https://github.com/maryammoshtoofar/notes_app_JS",
+    url: "https://maryammoshtoofar.github.io/notes_app_JS",
+  },
+
+  {
+    id: 6,
+    title: "Blog Preview Card",
+    image: "blog-preview-card.png",
+    techStack: "React / Typescript / Tailwind",
+    github: "https://github.com/maryammoshtoofar/blog-preview-card",
+    url: "https://maryammoshtoofar.github.io/blog-preview-card",
   },
 ];

@@ -14,7 +14,7 @@ const PersonalDetails = () => {
   };
   return (
     <Col lg={8}>
-      <h4>Front-end Develeoper (React)</h4>
+      <h4>Full-stack Develeoper (JS, Next, Node)</h4>
       <Row>
         <Col>
           <dl>
@@ -28,11 +28,11 @@ const PersonalDetails = () => {
           </dl>
         </Col>
         <Row>
-          I'm currently working on a full E-Commerce Website for my portfolio
-          using React, Typescript and ANTDesign. I'm excited to make the leap
-          and continue refining my skills with the right company. Drop me a line
-          through my e-mail or Telegram account above or below! You can also
-          check out my Github.
+          I believe in learning by doing and that a good laugh can solve most
+          bugs (or at least make them more bearable). If you're looking for a
+          developer who brings both skill and a smile, let's connect and build
+          something awesome together! Drop me a line through my e-mail or
+          Telegram account above or below! You can also check out my Github.
         </Row>
       </Row>
     </Col>

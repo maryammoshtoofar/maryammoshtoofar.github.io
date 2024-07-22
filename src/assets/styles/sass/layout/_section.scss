@@ -20,7 +20,7 @@ main {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #45505b;
+    color: $light-text;
     &::before {
       content: "";
       position: absolute;
