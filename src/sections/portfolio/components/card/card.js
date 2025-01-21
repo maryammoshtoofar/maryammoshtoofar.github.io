@@ -6,12 +6,20 @@ const Card = ({ project }) => {
         <p className="title">{project.title}</p>
         <p className="sub-title">{project.techStack}</p>
       </div>
-      <a className="link" target="_blank" href={project.github}>
-        View on Github
-      </a>
-      <a target="_blank" href={project.url}>
-        <button>View</button>
-      </a>
+      {project.github ? (
+        <a className="link" target="_blank" href={project.github}>
+          View on Github
+        </a>
+      ) : (
+        <span className="link">SourceCode: NDA Protected</span>
+      )}
+      {project.url ? (
+        <a target="_blank" href={project.url}>
+          <button>View</button>
+        </a>
+      ) : (
+        <span className="link">Link: Corporate (Private Server)</span>
+      )}
     </div>
   );
 };

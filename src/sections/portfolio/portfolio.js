@@ -14,11 +14,14 @@ const Portfolio = () => {
       <Animated animateConfig={animateConfig}>
         <div className="section-title">
           <h2>Portfolio</h2>
-          <p>Some of these projects require a VPN</p>
+          <p>
+            Some of these projects require a VPN. You can read more about NDA
+            protected projects in the next section.
+          </p>
         </div>
         <div className="portfolios">
           {projects.map((project) => (
-              <Card key={project.id} project={project} />
+            <Card key={project.id} project={project} />
           ))}
         </div>
       </Animated>
