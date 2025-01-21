@@ -5,22 +5,22 @@ import Skill from "./components/skill";
 
 const Skills = () => {
   const techStack = [
-    { name: "JavaScript", percent: 90 },
-    { name: "HTML:", percent: 95 },
-    { name: "CSS", percent: 90 },
-    { name: "TypeScript", percent: 65 },
-    { name: "Nextjs", percent: 75 },
-    { name: "Nodejs", percent: 70 },
-    { name: "web3.js / ethers.js", percent: 65 },
-    { name: "Responsive Web Design", percent: 90 },
-    { name: "React Context / Redux", percent: 90 },
-    { name: "Git", percent: 95 },
-    { name: "MongoDB", percent: 55 },
-    { name: "RESTful APIs", percent: 85 },
-    { name: "SASS", percent: 75 },
+    { name: "JavaScript", percent: 70 },
+    { name: "HTML/CSS:", percent: 95 },
+    { name: "React", percent: 70 },
+    { name: "TypeScript", percent: 60 },
+    { name: "Nextjs", percent: 55 },
+    { name: "Nodejs", percent: 40 },
+    { name: "web3.js / ethers.js", percent: 50 },
+    { name: "Responsive Web Design", percent: 80 },
+    { name: "React Context / Redux", percent: 70 },
+    { name: "Git", percent: 50 },
+    { name: "MongoDB", percent: 50 },
+    { name: "RESTful APIs", percent: 60 },
+    { name: "SASS", percent: 65 },
     { name: "UI Frameworks (Tailwind , Bootstrap..)", percent: 95 },
-    { name: "SSR", percent: 55 },
-    { name: "Figma / Adobe XD", percent: 80 },
+    { name: "MUI", percent: 85 },
+    { name: "Figma / Adobe XD", percent: 70 },
   ];
 
   const animateConfig = {
