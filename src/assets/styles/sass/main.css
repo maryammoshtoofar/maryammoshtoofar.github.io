@@ -11383,4 +11383,25 @@ body {
 }
 .contact .email {
   word-break: break-all;
+}
+
+.corporate-projects {
+  font-family: monospace;
+  line-height: 2rem;
+}
+.corporate-projects strong,
+.corporate-projects .project-title {
+  color: #f0587e;
+}
+.corporate-projects h5, .corporate-projects .h5,
+.corporate-projects h6,
+.corporate-projects .h6 {
+  color: #f0587e;
+  font-weight: 600;
+}
+.corporate-projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style-type: square;
 }/*# sourceMappingURL=main.css.map */

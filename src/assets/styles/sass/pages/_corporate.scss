@@ -1,0 +1,20 @@
+.corporate-projects {
+  font-family: monospace;
+
+  strong,
+  .project-title {
+    color: $rose;
+  }
+  h5,
+  h6 {
+    color: $rose;
+    font-weight: 600;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: square;
+  }
+  line-height: 2rem;
+}
